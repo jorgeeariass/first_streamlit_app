@@ -2,5 +2,4 @@ import streamlit
 
 streamlit.title('My Parents New Healthy Diner')
 
-for i in range(5):
-  print(i)
+streamlit.body('This is my new menu')
