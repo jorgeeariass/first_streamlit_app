@@ -2,4 +2,4 @@ import streamlit
 
 streamlit.title('My Parents New Healthy Diner')
 
-print('Hello')
+streamlit.text('Hello world!')
