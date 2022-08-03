@@ -4,7 +4,7 @@ import pandas as pd
 
 st.title('Retail Data Analysis')
 
-st.header('Breakfast Menu')
+st.header('Overall')
 
 # Let's put a pick list here so they can pick the fruit they want to include 
 # fruits_selected = st.multiselect("Pick some fruits:", list(my_fruit_list.index), ['Avocado', 'Strawberries'])
