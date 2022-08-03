@@ -19,3 +19,13 @@ sales_ts.index = pd.to_datetime(sales_ts.index, format = '%Y-%m-%d')
 # Display the table on the page.
 st.text('Retail Data')
 st.dataframe(retail_df)
+
+fig, axs = plt.subplots(nrows = 1,
+                        ncols = 1, 
+                        figsize=(20, 8))
+
+axs.set_xticklabels(lbls, rotation = 45)
+axs.plot(sales_ts)
+axs.set_title('Total Retail Sales TS', fontweight ="bold");
+
+st.pyplot(fig)
