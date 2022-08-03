@@ -25,6 +25,8 @@ st.title('My Parents New Healthy Diner')
 
 retail_df = pd.read_csv('Retail_Sales.csv', index_col = 'DateTimeIndex')
 retail_df.index.name = None
+
+sales_ts = retail_df['Sales']
 sales_ts.index = pd.to_datetime(sales_ts.index, format = '%Y-%m-%d')
 
 st.dataframe(retail_df)
